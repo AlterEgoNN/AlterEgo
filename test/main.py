@@ -4,7 +4,7 @@ from ultralytics import YOLO
 
 
 model = YOLO("bestV11.pt")
-results = model.predict("D:/cable-damage/test")
+results = model.predict("./testpictures/")
 for result in results:
     result.save()
 
