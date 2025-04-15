@@ -1,6 +1,6 @@
 
-train: 'train'
-val: 'valid'
+train: 'datasets/train'
+val: 'datasets/valid'
 
 # class names
 names:

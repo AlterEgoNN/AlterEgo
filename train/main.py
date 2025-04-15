@@ -1,19 +1,17 @@
 from ultralytics import YOLO
 import os
+from pathlib import Path
 
 
 def __main__():
-    os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:21"
-
-    model = YOLO('yolov3u')
+    model = YOLO(model="yolo12m.pt")
 
     results = model.train(
-        data='config.yaml',
+        data=Path(__file__).resolve().parent / "config.yaml",
         imgsz=640,
-        epochs=200,
-        batch=4,
-        name='yolov3-32',
-        save_period=20
+        epochs=100,
+        batch=-1,
+        save_period=20,
     )
 
 

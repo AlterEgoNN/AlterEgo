@@ -1,5 +1,5 @@
 # AlterEgo
-AlterEgo это модель обученная с иользованием предобученной модели YOLO для распознавания повреждений на троссах.
+AlterEgo это модель обученная с использованием предобученной модели YOLO для распознавания повреждений на тросах.
 ## AlterEgo: Training
 Для тренировки модели необходимо использовать скрипт ```main.py``` из папки ```train```.
 Для его использование необходимо следующее:
@@ -20,6 +20,7 @@ AlterEgo это модель обученная с иользованием пр
 Длительность обучения для разный моделей:
 1. YOLOv8 - 1 час 40 минут
 2. YOLOv11 - 1 час 40 минут
+3. YOLOv12 - 1 час 22 минут
 4. YOLOv3u - 14 часов
 
 ### Результаты обучения
@@ -27,6 +28,8 @@ YOLOv8<br>
 <img src="./train/YOLO8_train_result/results.png" alt="YOLOv8_results" width="600" height="300"><br>
 YOLOv11<br>
 <img src="./train/YOLO11_train_result/results.png" alt="YOLOv11_results" width="600" height="300"><br>
+YOLOv12<br>
+<img src="./train/YOLO12_train_result/results.png" alt="YOLOv11_results" width="600" height="300"><br>
 YOLOv3u<br>
 <img src="./train/YOLO3u_train_result/results.png" alt="YOLOv3u_results" width="600" height="300"><br>
 
@@ -51,5 +54,7 @@ YOLOv8<br>
 <img src="./test/COMPRUNV8/results_--------------2022-02-24---16-26-56_png_jpg.rf.7d981e33657305fdf97bc0d058cfdf3f.jpg" alt="YOLOv8_results" width="300" height="200"><br>
 YOLOv11<br>
 <img src="./test/COMPRUNV11/results_--------------2022-02-24---16-26-56_png_jpg.rf.7d981e33657305fdf97bc0d058cfdf3f.jpg" alt="YOLOv11_results" width="300" height="200"><br>
+YOLOv12<br>
+<img src="./test/COMPRUNV12/results_--------------2022-02-24---16-26-56_png_jpg.rf.7d981e33657305fdf97bc0d058cfdf3f.jpg" alt="YOLOv12_results" width="300" height="200"><br>
 YOLOv3u<br>
 <img src="./test/COMPRUNV3/results_--------------2022-02-24---16-26-56_png_jpg.rf.7d981e33657305fdf97bc0d058cfdf3f.jpg" alt="YOLOv3u_results" width="300" height="200"><br>
